@@ -1,0 +1,14 @@
+﻿# Шаблон обработки полей
+name: field_processing
+description: "Базовая обработка полей товара"
+steps:
+  - processor: price_formatter
+    params:
+      source_field: price.ric
+      output_format: "{value:.2f} {currency}"
+  - processor: value_normalizer
+    params:
+      dictionaries:
+        availability:
+          source: ["yes", "yes!", "ok", "1"]
+          target: "В наличии"

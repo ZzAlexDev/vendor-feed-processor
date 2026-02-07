@@ -1,0 +1,8 @@
+﻿# Шаблон маппинга атрибутов WooCommerce
+name: wc_attribute_mapping
+description: "Преобразование параметров в атрибуты WC"
+steps:
+  - processor: attribute_mapper
+    params:
+      strategy: from_techs
+      group_by: group

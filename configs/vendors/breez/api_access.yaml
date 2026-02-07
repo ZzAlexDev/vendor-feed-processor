@@ -1,0 +1,11 @@
+﻿# Настройки доступа к API
+base_url: "https://api.breez.ru/v1/"
+auth_type: basic
+credentials_env: BREEZ_API_CREDENTIALS
+timeout: 30
+endpoints:
+  products: "/products/"
+  categories: "/categories/"
+  brands: "/brands/"
+  tech: "/tech/"
+  leftovers: "/leftoversnew/"

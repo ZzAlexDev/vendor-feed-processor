@@ -1,0 +1,24 @@
+﻿<!-- Шаблон полного описания товара -->
+<div class="product-description">
+    <h2>Описание</h2>
+    {{ description|safe }}
+    
+    <h2>Технические характеристики</h2>
+    <table class="tech-specs">
+        {% for attr in attributes %}
+        <tr>
+            <td>{{ attr.name }}</td>
+            <td>{{ attr.value }} {{ attr.unit }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    
+    {% if documents %}
+    <h2>Документация</h2>
+    <ul class="documents">
+        {% for doc in documents %}
+        <li><a href="{{ doc.url }}">{{ doc.name }}</a></li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+</div>

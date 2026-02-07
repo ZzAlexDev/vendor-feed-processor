@@ -1,0 +1,6 @@
+﻿# Настройки логирования
+level: INFO
+format: json
+rotation:
+  size: 10MB
+  count: 5

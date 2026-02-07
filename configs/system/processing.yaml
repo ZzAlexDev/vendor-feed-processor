@@ -1,0 +1,9 @@
+﻿# Параметры обработки
+chunk_size: 50
+max_workers: 4
+retry:
+  attempts: 3
+  delay: 5
+timeout:
+  api_request: 30
+  total_task: 3600

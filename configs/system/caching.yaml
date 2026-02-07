@@ -1,0 +1,4 @@
+﻿# Настройки кэширования
+enabled: true
+ttl_minutes: 120
+strategy: filesystem  # или redis

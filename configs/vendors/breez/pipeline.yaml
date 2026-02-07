@@ -1,0 +1,17 @@
+﻿# Сборный конфиг пайплайна для Breez
+vendor_id: breez
+includes:
+  - "../system/processing.yaml"
+  - "../../pipeline_templates/field_processing.yaml"
+  - "../../pipeline_templates/seo_generation.yaml"
+  - "../../pipeline_templates/wc_attribute_mapping.yaml"
+
+overrides:
+  field_processing:
+    price_formatter:
+      params:
+        currency: RUB
+  image_handling:
+    strategy: download
+    local_folder: "./media/breez"
+    max_count: 10

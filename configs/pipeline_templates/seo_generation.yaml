@@ -1,0 +1,8 @@
+﻿# Шаблон генерации SEO
+name: seo_generation
+description: "Генерация мета-тегов и SEO-контента"
+steps:
+  - builder: seo_optimizer
+    params:
+      meta_title_template: "{title} | {brand}"
+      meta_description_length: 160

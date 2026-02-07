@@ -1,0 +1,10 @@
+﻿# Фильтры при загрузке данных
+categories:
+  include: [2, 5, 10]
+  exclude: [15]
+brands:
+  include: [1, 3]
+price:
+  min: 1000
+availability:
+  only_in_stock: false
